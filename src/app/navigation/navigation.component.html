@@ -1,0 +1,13 @@
+<div class="navigation__mobile-header">
+  <h1 class="navigation__mobile-title"></h1>
+  <span class="navigation__mobile-close zoom-icon-close" onclick="Menu.close()"></span>
+</div>
+<nav class="navigation">
+  <ul class="navigation__list">
+    <li class="navigation__list-item" *ngFor="let nav of navigation">
+      <a routerLink="[nav.url]" routerLinkActive="[nav.status]" class="navigation__link--selected navigation__link">
+        {{nav.title}}
+      </a>
+    </li>
+  </ul>
+</nav>
